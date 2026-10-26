@@ -310,7 +310,7 @@ var u="https://bjrqoerchwfknionpfug.supabase.co"+'/rest/v1/'+path;return fetch(u
 <input id="recLink" type="url" autofocus inputmode="url" autocomplete="off" autocapitalize="off" placeholder="https://..." required>
 <button class="btn alt" id="pasteBtn" type="button">Paste</button></div><p class="err" id="err"></p>
 <button type="button" class="addnote" id="addNote">+ Add note</button><div class="notewrap" id="noteWrap" hidden><label for="recNotes">Note</label><textarea id="recNotes" rows="1" placeholder="Anything to remember?"></textarea></div>
-<label>Added by</label><div class="who-pick" id="whoPick"><button type="button" data-w="Mom">Mom</button><button type="button" data-w="Dad">Dad</button><button type="button" data-w="Kids">Kids</button></div>
+<label>Added by</label><div class="who-pick" id="whoPick"><button type="button" data-w="Mom">Mom</button><button type="button" data-w="Dad">Dad</button><button type="button" data-w="Kid 1">Kid 1</button><button type="button" data-w="Kid 2">Kid 2</button><button type="button" data-w="Kid 3">Kid 3</button></div>
 <button type="button" class="tagrow" id="tagRow" aria-expanded="false" aria-controls="tagPanel"><span class="tl">Tags</span><span class="tv" id="tagVal">None</span><span class="chev" aria-hidden="true"></span></button>
 <div class="tagpanel" id="tagPanel"><div class="tpin"><div class="tagpick" id="tagPick"></div>
 <button type="button" class="tmore" id="tagMore">More</button><div class="tagpick" id="tagPick2" hidden></div>
@@ -367,7 +367,7 @@ link.value='';notes.value='';setTimeout(function(){busy=false;send.disabled=fals
 })();
 </script><script>
 (function(){
-var data={},busy=false,STAR="<svg class=\"ic\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z\"/></svg>",RIDS=["p1", "p2", "p3"];
+var data={},busy=false,STAR="<svg class=\"ic\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z\"/></svg>",RIDS=["p1", "p2", "p3", "p4", "p5"];
 function avg(r){var v=RIDS.map(function(k){return r&&r[k]}).filter(function(x){return x>=1&&x<=10});return v.length?(v.reduce(function(a,b){return a+b},0)/v.length):null;}
 function render(){document.querySelectorAll('.badge').forEach(function(b){var a=avg(data[b.dataset.rid]);if(a){b.textContent=a.toFixed(1)+'/10';b.hidden=false}else b.hidden=true;});
 document.querySelectorAll('.ratings').forEach(function(box){var r=data[box.dataset.rid]||{};box.querySelectorAll('.rrow').forEach(function(row){var v=r[row.dataset.who]||0;
@@ -395,7 +395,7 @@ nm.hidden=n>0||!cards.length;if(!n&&rl&&!raw.trim()&&!ft){nm.textContent=rl==='U
 q.addEventListener('input',run);x.addEventListener('click',function(){q.value='';run();q.focus();});
 q.addEventListener('keydown',function(e){if(e.key==='Escape'){q.value='';run();}if(e.key==='Enter')q.blur();});run();})();
 </script><script>
-(function(){var RATERS=[["p1", "Mom"], ["p2", "Dad"], ["p3", "Kids"]],K='rbRateF',st={min:'',who:'all',sort:''};try{st=Object.assign(st,JSON.parse(sessionStorage.getItem(K)||'{}'))}catch(e){}
+(function(){var RATERS=[["p1", "Mom"], ["p2", "Dad"], ["p3", "Kid 1"], ["p4", "Kid 2"], ["p5", "Kid 3"]],K='rbRateF',st={min:'',who:'all',sort:''};try{st=Object.assign(st,JSON.parse(sessionStorage.getItem(K)||'{}'))}catch(e){}
 var chip=document.getElementById('rateChip'),pk=document.getElementById('ratePick'),grid=document.querySelector('.grid'),W={all:'Everyone'};RATERS.forEach(function(x){W[x[0]]=x[1]});if(st.who!=='all'&&!W[st.who])st.who='all';
 function sc(rid){var r=(window.rbRatings||{})[rid];if(!r)return null;var ks=st.who==='all'?RATERS.map(function(x){return x[0]}):[st.who],v=ks.map(function(k){return r[k]}).filter(function(x){return x>=1&&x<=10});return v.length?v.reduce(function(a,b){return a+b},0)/v.length:null;}
 function rid(c){return c.getAttribute('href').slice(1)}

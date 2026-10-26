@@ -16,7 +16,15 @@
     },
     {
       "id": "p3",
-      "label": "Kids"
+      "label": "Kid 1"
+    },
+    {
+      "id": "p4",
+      "label": "Kid 2"
+    },
+    {
+      "id": "p5",
+      "label": "Kid 3"
     }
   ],
   "home_zip": "78665",
