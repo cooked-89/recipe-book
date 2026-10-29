@@ -48,6 +48,11 @@
       "id": "walmart",
       "name": "Walmart",
       "cart_url": "https://www.walmart.com/cart"
+    },
+    {
+      "id": "randalls",
+      "name": "Randalls",
+      "cart_url": "https://www.randalls.com/erums/cart"
     }
   ],
   "store_name_words_to_hide": [
