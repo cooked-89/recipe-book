@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "id": "high-protein-hamburger-helper",
+    "title": "High Protein Hamburger Helper",
+    "description": "One-pot weeknight dinner with extra veggies blended into the sauce with cottage cheese for a protein boost.",
+    "servings": "6 (1.25 cups per serving)",
+    "prepTime": "20 min",
+    "cookTime": "20 min",
+    "totalTime": "40 min",
+    "image": "images/high-protein-hamburger-helper.jpg",
+    "source": "https://www.peanutbutterandfitness.com/high-protein-hamburger-helper/",
+    "sourceName": "Peanut Butter and Fitness",
+    "sourcePost": null,
+    "addedBy": "Dad",
+    "added": "2026-10-29T03:44:17.000Z",
+    "tags": [
+      "Dinner"
+    ],
+    "ingredients": [
+      "1 lb 93/7 ground beef",
+      "10 oz pipette rigate pasta (284 g)",
+      "8 oz tomato sauce with basil, garlic & oregano (217 g)",
+      "1 medium carrot, cleaned and shredded (75 g)",
+      "1 medium zucchini, trimmed and shredded (180 g)",
+      "2 1/4 cups low sodium beef broth (18 fl oz)",
+      "1 cup fat free cottage cheese (8 fl oz)",
+      "1 cup skim ultra-filtered milk (8 fl oz)",
+      "1 cup shredded sharp cheddar cheese (90 g)",
+      "1 medium sweet onion, chopped (110 g)",
+      "3 cloves garlic, minced (12 g)",
+      "2 tsp olive oil, divided",
+      "3/4 tsp smoked paprika",
+      "3/4 tsp oregano",
+      "3/4 tsp ground mustard",
+      "1/4 tsp red pepper flakes",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Heat 1 tsp olive oil in a large, deep skillet or pot over medium-high heat. Once the oil is shimmery, add shredded zucchini and carrot, onion, and garlic and sauté until tender. Remove veggies to a bowl and add tomato sauce and cottage cheese, then blend with an immersion blender until smooth. This can also be done in a food processor or blender. Set aside.",
+      "Add remaining olive oil to skillet or pot over medium-high heat. Once shimmery, add ground beef and season with salt and pepper. Continue cooking, breaking apart until cooked through. Season with smoked paprika, oregano, ground mustard, and red pepper flakes.",
+      "Add the blended veggie and cottage cheese sauce, milk, and broth to the cooked ground beef. Stir until combined, then add pasta and stir until the noodles are covered with liquid.",
+      "Cover the skillet or pot and bring to a gentle boil for 8-11 minutes, or until the pasta is cooked very al dente, and remove from heat. The pasta will continue to cook in the sauce after being removed from the heat.",
+      "Stir in the cheese until melted, then serve."
+    ]
+  }
+]
