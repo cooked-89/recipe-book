@@ -18,6 +18,10 @@ Each run, `cd` into the repo, `git pull`, then check three queues. If all three 
      result yourself; if it shows a person, raw ingredients or text, try other frames or the page's images, and keep going
      until you're satisfied it clearly shows the finished dish. Save as `images/<id>.jpg`.
    - Add the recipe to `recipes.json` (shape in `recipe.example.json`; `addedBy` from the row's `added_by`, notes kept).
+   - Macros per serving (`macros`: calories, protein_g, carbs_g, fat_g, source): run `python3 nutrition.py <link>`. If it
+     prints macros, use them as-is (`"source": "recipe"`); also use nutrition the creator states in a caption or page text.
+     Otherwise estimate from the ingredients ÷ servings with standard USDA values and set `"source": "estimated"` (shown
+     with an "est." label). Never mark an estimate as `recipe`. Keep `servings` starting with a number so scaling works.
    - `python3 process_queue.py --done <queue_id>=<recipe_id>`, then `python3 build.py`, commit and push.
    - Tell us in one or two sentences what was added.
 2. **Shopping requests**: `python3 shopping_queue.py list`. For each: `mark <id> processing`; shop the stores in
@@ -25,8 +29,9 @@ Each run, `cd` into the repo, `git pull`, then check three queues. If all three 
    update progress with `progress`; score each pick with `clean.py`; compute top 3 stores and the best 2-store split
    (README "Clean score"); `validate`, then `post-result`. Tell us the cleanest store, the cheapest, and the best split in
    a short message. Never add anything to a cart in this step.
+   Item text is already scaled when someone scaled the recipe (title ends in e.g. "(2x)"); buy for those amounts.
 3. **Send to cart**: `python3 cart_queue.py list`. Only rows with status `queued`. For each, first
-   `mark <id> working`, then add each item to that store's cart in the browser. **Never check out or place an order.
+   `mark <id> working`, then add each item to that store's cart in the browser, using each item's `qty` (already sized for any recipe scaling). **Never check out or place an order.
    Never remove or change items already in the cart.** If an item is out of stock, choose the closest clean swap and note
    it. Finish with `mark <id> done|partial|failed --added added.json --failed failed.json --note "..."`, and tell us what
    went in, any swaps, and the cart subtotal.

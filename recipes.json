@@ -41,7 +41,14 @@
    "Add the blended veggie and cottage cheese sauce, milk, and broth to the cooked ground beef. Stir until combined, then add pasta and stir until the noodles are covered with liquid.",
    "Cover the skillet or pot and bring to a gentle boil for 8-11 minutes, or until the pasta is cooked very al dente, and remove from heat. The pasta will continue to cook in the sauce after being removed from the heat.",
    "Stir in the cheese until melted, then serve."
-  ]
+  ],
+  "macros": {
+   "calories": 437,
+   "protein_g": 35,
+   "carbs_g": 45,
+   "fat_g": 13,
+   "source": "recipe"
+  }
  },
  {
   "id": "high-protein-chicken-parmesan",
@@ -70,6 +77,13 @@
    "Preheat oven to 425°F. Line a large rimmed baking sheet with parchment paper.",
    "Place tenderized chicken breasts on the baking sheet. Coat with olive oil, then season both sides generously with salt, onion powder, garlic powder and Italian herb blend. Bake 15 minutes or until the chicken's internal temperature reaches 165°F.",
    "Remove from oven and top each piece with marinara, then 3 tbsp cottage cheese, then lots of grated parmesan. Return to the oven for 5–7 minutes."
-  ]
+  ],
+  "macros": {
+   "calories": 312,
+   "protein_g": 35,
+   "carbs_g": 5,
+   "fat_g": 16,
+   "source": "recipe"
+  }
  }
 ]

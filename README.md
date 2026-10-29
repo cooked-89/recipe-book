@@ -21,6 +21,8 @@ This copy has **no recipes, photos, names or accounts in it**. You plug in your 
 ---
 
 ## What you get
+- **Macros & scaling**: each recipe shows calories, protein, carbs and fat per serving ("est." when estimated rather than
+  from the recipe). 1x / 1.5x / 2x buttons or a custom servings box scale every ingredient; Add to Cart uses the scaled amounts.
 - **Recipe book**: newest recipes first, search (titles, ingredients, tags, who added it), tag filter chips.
 - **Ratings out of 10** for each person (names set in `config.json`), an average badge on every card, and a
   **Rating** filter on the home page (minimum score, rated by, sort by Newest / Highest rated / A–Z).

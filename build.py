@@ -74,17 +74,42 @@ def norm(s): return ''.join(c for c in unicodedata.normalize('NFD', s.lower()) i
 def stext(r): return norm(' '.join([r.get('title') or '', ' '.join(r.get('ingredients') or []), r.get('sourceName') or '', r.get('source') or '', r.get('addedBy') or '', ' '.join(tags_of(r))]))
 def cmeta(r): return ' \u00b7 '.join(x for x in [f"Serves {r['servings']}" if r.get('servings') else '', str(r.get('totalTime') or r.get('cookTime') or '')] if x)
 cards = ''.join(f'<a class="card" data-a="{e(r['title'].lower())}" data-s="{e(stext(r))}" data-t="{e('|' + '|'.join(norm(t) for t in tags_of(r)) + '|' if tags_of(r) else '')}" href="#{e(r["id"])}">{img(r,"")}<span class="badge" data-rid="{e(r["id"])}" hidden></span><div class="ct"><h3>{e(r["title"])}</h3><p class="cm">{e(cmeta(r))}</p><div class="tags" data-rid="{e(r["id"])}">{chips(r)}</div></div></a>' for r in R)
+
+def macros_html(r):
+    m = r.get('macros') or {}
+    if not m or m.get('calories') is None: return ''
+    est = m.get('source') != 'recipe'
+    cells = ''.join(f'<span><b>{v if v is not None else "&ndash;"}{u}</b>{k}</span>' for k, v, u in
+                    [('Calories', m.get('calories'), ''), ('Protein', m.get('protein_g'), 'g'), ('Carbs', m.get('carbs_g'), 'g'), ('Fat', m.get('fat_g'), 'g')])
+    lab = 'Per serving' + (' <em class="est" title="Estimated from the ingredients, not from the recipe">est.</em>' if est else '')
+    return f'<div class="macros"><p class="mlab">{lab}</p><div class="mrow">{cells}</div></div>'
+def scaler_html(r):
+    return (f'<div class="scaler" data-rid="{e(r["id"])}" role="group" aria-label="Scale recipe"><button type="button" class="on" data-k="1">1x</button>'
+            '<button type="button" data-k="1.5">1.5x</button><button type="button" data-k="2">2x</button>'
+            + (f'<label class="scust">Servings <input type="number" inputmode="decimal" min="0.5" step="0.5" placeholder="{e(str(r.get("servings")).split()[0])}" aria-label="Custom servings"></label>' if _re.match(r'\s*\d', str(r.get('servings') or '')) else '') + '</div>')
 pages = ''
 for r in R:
-    meta = ''.join(f'<span><b>{k}</b> {e(str(r[f]))}</span>' for k, f in
+    meta = ''.join(f'<span{' class="srv" data-t="' + e(str(r[f])) + '"' if f == 'servings' else ''}><b>{k}</b> <i>{e(str(r[f]))}</i></span>' for k, f in
                    [('Serves', 'servings'), ('Prep', 'prepTime'), ('Cook', 'cookTime'), ('Total', 'totalTime')] if r.get(f))
-    ing = ''.join(f'<li>{e(i)}</li>' for i in r['ingredients'])
+    ing = ''.join(f'<li data-t="{e(i)}">{e(i)}</li>' for i in r['ingredients'])
     st = ''.join(f'<li>{e(s)}</li>' for s in r['steps'])
     pages += f'''<section class="recipe" id="{e(r["id"])}"><a class="back" href="#">All recipes</a>
 <div class="imgwrap">{img(r,"hero")}<span class="badge" data-rid="{e(r["id"])}" hidden></span></div><div class="rbody"><h2>{e(r["title"])}</h2><p class="desc">{e(r.get("description",""))}</p>
-<div class="meta">{meta}</div><div class="rtags" data-rid="{e(r["id"])}"><div class="chips">{chips(r)}</div></div><button type="button" class="cartadd" data-rid="{e(r["id"])}">{ic("cart")}Add to Cart</button><div class="ratings" data-rid="{e(r["id"])}"><h4>Family ratings</h4>{RATE_ROWS}<p class="rmsg"></p></div><div class="cols"><div><h4>Ingredients</h4><ul>{ing}</ul></div>
+<div class="meta">{meta}</div>{macros_html(r)}{scaler_html(r)}<div class="rtags" data-rid="{e(r["id"])}"><div class="chips">{chips(r)}</div></div><button type="button" class="cartadd" data-rid="{e(r["id"])}">{ic("cart")}Add to Cart</button><div class="ratings" data-rid="{e(r["id"])}"><h4>Family ratings</h4>{RATE_ROWS}<p class="rmsg"></p></div><div class="cols"><div><h4>Ingredients</h4><ul class="ingl" data-rid="{e(r["id"])}">{ing}</ul></div>
 <div><h4>Steps</h4><ol>{st}</ol></div></div>
 <p class="src">Source: <a href="{e(r["source"])}" target="_blank" rel="noopener">{e(r.get("sourceName", r["source"]))}</a>{(' &middot; <a href="' + e(r["sourcePost"]) + '" target="_blank" rel="noopener">Original post</a>') if r.get("sourcePost") else ''}</p></div></section>'''
+SCALE_JS = "<script>" + open("scale.js").read() + """
+(function(){window.rbK={};
+function apply(rid,k,fromInput){window.rbK[rid]=k;var sec=document.getElementById(rid);if(!sec)return;
+sec.querySelectorAll('.ingl li').forEach(function(li){li.textContent=RBScale.scale(li.dataset.t,k)});
+var sv=sec.querySelector('.meta .srv');if(sv)sv.querySelector('i').textContent=RBScale.scale(sv.dataset.t,k,true);
+var sc=sec.querySelector('.scaler');sc.querySelectorAll('button').forEach(function(b){b.classList.toggle('on',+b.dataset.k===k)});
+var inp=sc.querySelector('input');if(inp&&!fromInput)inp.value='';
+var ca=sec.querySelector('.cartadd');if(ca)ca.lastChild.textContent=k===1?'Add to Cart':'Add '+RBScale.fmt(k)+'x to Cart';}
+document.addEventListener('click',function(e){var b=e.target.closest('.scaler button');if(!b)return;apply(b.closest('.scaler').dataset.rid,+b.dataset.k);});
+document.addEventListener('input',function(e){var i=e.target.closest('.scaler input');if(!i)return;var sc=i.closest('.scaler'),rid=sc.dataset.rid,sv=document.getElementById(rid).querySelector('.meta .srv'),b=RBScale.base(sv?sv.dataset.t:''),n=parseFloat(i.value);
+if(!(b>0)||!(n>0)){apply(rid,1,true);return;}apply(rid,Math.round(n/b*1000)/1000,true);});
+})();</script>"""
 SEARCH_JS = """<script>
 (function(){var q=document.getElementById('q'),x=document.getElementById('qx'),nm=document.getElementById('nomatch'),nmq=document.getElementById('nmq'),cards=[].slice.call(document.querySelectorAll('.card'));
 function norm(s){return s.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');}
@@ -295,7 +320,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&$('cartBg')
 document.addEventListener('click',function(e){var b=e.target.closest('.cartadd');if(!b)return;var rid=b.dataset.rid,R_=REC[rid];if(!R_)return;b.disabled=true;
 SB('cart_items?select=id&limit=1&recipe_id=eq.'+encodeURIComponent(rid)).then(function(ex){
 if(ex.length&&!confirm('\\u201c'+R_.t+'\\u201d is already in the cart. Add its ingredients again?\\n\\nOK = add again, Cancel = skip')){toast('Skipped \\u2014 already in cart');return;}
-var base=Date.now()/1000;return act(SB('cart_items',{method:'POST',prefer:'return=minimal',body:R_.i.map(function(t,ix){return {recipe_id:rid,recipe_title:R_.t,text:t,sort_order:base+ix/1000}})}),'Added '+R_.i.length+' items \\u2713');})
+var base=Date.now()/1000;return act(SB('cart_items',{method:'POST',prefer:'return=minimal',body:(function(){var k=(window.rbK||{})[rid]||1,tt=R_.t+(k!==1?' ('+RBScale.fmt(k)+'x)':'');return R_.i.map(function(t,ix){return {recipe_id:rid,recipe_title:tt,text:RBScale.scale(t,k),sort_order:base+ix/1000}})})()}),'Added '+R_.i.length+' items'+(((window.rbK||{})[rid]||1)!==1?' at '+RBScale.fmt((window.rbK||{})[rid])+'x':'')+' \\u2713');})
 .catch(function(){toast('Couldn\\u2019t reach the cart \\u2014 try again');}).then(function(){b.disabled=false;});});
 $('custForm').addEventListener('submit',function(e){e.preventDefault();var t=$('custIn').value.trim();if(!t)return;$('custIn').value='';
 act(SB('cart_items',{method:'POST',prefer:'return=minimal',body:{text:t}}),'Added \\u2713');});
@@ -400,7 +425,7 @@ open('index.html', 'w').write(f'''<!doctype html><html><head><meta charset="utf-
 <meta name="apple-mobile-web-app-title" content="{e(SHORT_NAME)}"><link rel="apple-touch-icon" href="icons/icon-180.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <title>{e(APP_NAME)}</title><style>{open("design.css").read()}</style></head><body><header class="bar glass"><a class="barback" href="#">{ic("back")}Recipes</a><span class="barspace"></span><div class="search" role="search"><span class="sicon" aria-hidden="true">{ic("search")}</span><input id="q" type="search" placeholder="Search recipes, ingredients, who added&hellip;" aria-label="Search recipes" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="search"><button type="button" id="qx" class="qx" aria-label="Clear search" hidden>{ic("close")}</button></div><button type="button" class="cartbtn" id="cartBtn" aria-label="Shopping cart">{ic("cart")}<span class="cnt" id="cartCnt" hidden>0</span></button></header>
-<main><div class="intro">{EYEBROW}<h1>{e(APP_NAME)}</h1><p class="sub">{len(R)} recipes</p></div><div class="frow"><button type="button" class="chip rchip" id="rateChip" aria-haspopup="true" aria-controls="ratePick" aria-expanded="false">Rating</button><div class="tagbar" id="tagBar" hidden></div></div><div class="rpick" id="ratePick" hidden></div><div class="grid">{cards}</div>{EMPTY}<p class="nomatch" id="nomatch" hidden>No recipes match &ldquo;<span id="nmq"></span>&rdquo;. Try another word.</p>{pages}</main>{SB_JS}{ADD_HTML}{RATE_JS}{SEARCH_JS}{RATEF_JS}{TAGS_JS}{CART_HTML}<script>
+<main><div class="intro">{EYEBROW}<h1>{e(APP_NAME)}</h1><p class="sub">{len(R)} recipes</p></div><div class="frow"><button type="button" class="chip rchip" id="rateChip" aria-haspopup="true" aria-controls="ratePick" aria-expanded="false">Rating</button><div class="tagbar" id="tagBar" hidden></div></div><div class="rpick" id="ratePick" hidden></div><div class="grid">{cards}</div>{EMPTY}<p class="nomatch" id="nomatch" hidden>No recipes match &ldquo;<span id="nmq"></span>&rdquo;. Try another word.</p>{pages}</main>{SB_JS}{ADD_HTML}{RATE_JS}{SCALE_JS}{SEARCH_JS}{RATEF_JS}{TAGS_JS}{CART_HTML}<script>
 if('serviceWorker' in navigator){{navigator.serviceWorker.register('sw.js',{{updateViaCache:'none'}}).then(r=>{{r.update();document.addEventListener('visibilitychange',()=>{{if(!document.hidden)r.update()}})}});let R0=!!navigator.serviceWorker.controller;navigator.serviceWorker.addEventListener('controllerchange',()=>{{if(R0)location.reload();R0=true}})}}
 window.addEventListener('hashchange',function(){{window.scrollTo(0,0)}});
 </script></body></html>''')

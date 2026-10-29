@@ -292,3 +292,13 @@ body:has(.recipe:target) .frow,body:has(.recipe:target) .rpick{display:none!impo
 /* Empty book (fresh install) */
 .emptybook{max-width:520px;margin:24px auto 40px;padding:22px 20px;border:1px dashed currentColor;border-radius:16px;opacity:.75;text-align:center;line-height:1.5}
 .emptybook p{margin:.3em 0}
+.meta span i{font-style:normal}
+.macros{margin:-16px 0 20px}.mlab{margin:0 0 8px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.est{font-style:normal;margin-left:6px;padding:1px 6px;border-radius:6px;background:var(--surface-2);color:var(--ink-2);letter-spacing:.04em;text-transform:none;font-weight:500}
+.mrow{display:flex;gap:8px}.mrow span{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 4px;border-radius:12px;background:var(--surface-2);font-size:11px;color:var(--ink-2)}
+.mrow b{font-size:17px;font-weight:600;color:var(--ink)}
+.scaler{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 20px}
+.scaler button{height:36px;min-width:52px;padding:0 12px;border:.5px solid var(--line-2);border-radius:18px;background:var(--surface);color:var(--ink);font-size:15px;font-weight:500}
+.scaler button.on{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.scust{display:flex;align-items:center;gap:6px;margin-left:auto;font-size:14px;color:var(--ink-2)}
+.scust input{width:64px;height:36px;padding:0 10px;border:.5px solid var(--line-2);border-radius:10px;background:var(--surface);color:var(--ink);font:500 16px var(--font)}
