@@ -1,5 +1,460 @@
 [
  {
+  "id": "turkey-spinach-scramble-sweet-potato-hash",
+  "title": "Turkey Spinach Scramble with Sweet Potato Hash",
+  "description": "Golden sweet potato and onion hash with ground turkey, spinach and scrambled egg in one skillet. Scaled from 1 to 5 servings; use your largest skillet or two.",
+  "servings": "5",
+  "prepTime": "10 min",
+  "cookTime": "30 min",
+  "totalTime": "40 min",
+  "image": "images/turkey-spinach-scramble-sweet-potato-hash.jpg",
+  "source": "https://www.solin.stream/recipes/553053/turkey-spinach-scramble-with-sweet-potato-hash",
+  "sourceName": "Solin",
+  "sourcePost": null,
+  "addedBy": "Dad",
+  "added": "2026-10-30T03:23:18.000Z",
+  "tags": [
+   "Dinner",
+   "High Protein",
+   "Turkey"
+  ],
+  "macros": {
+   "calories": 529,
+   "protein_g": 29.5,
+   "carbs_g": 43,
+   "fat_g": 27,
+   "source": "recipe"
+  },
+  "ingredients": [
+   "1 lb 2 oz ground turkey (93% lean; about 17 1/2 oz)",
+   "5 large eggs, whisked",
+   "6 1/4 cups diced sweet potato (about 3 large)",
+   "5 cups fresh spinach",
+   "1 1/4 cups chopped yellow onion",
+   "1/4 cup + 1 tbsp avocado oil",
+   "2 1/2 teaspoons garlic powder"
+  ],
+  "steps": [
+   "Dice the sweet potato into 1/2-inch cubes and finely chop the onion.",
+   "Heat the avocado oil in a large non-stick skillet (or two) over medium-high heat.",
+   "Add the sweet potato and onion and sauté until the potatoes are tender and golden.",
+   "Push the vegetables aside, add the turkey and garlic powder, and break it up until browned and cooked through.",
+   "Add the spinach and stir until just wilted.",
+   "Lower heat to medium, pour in the whisked eggs, and gently scramble everything until the eggs are set."
+  ]
+ },
+ {
+  "id": "potato-hash-and-eggs",
+  "title": "Potato Hash & Eggs",
+  "description": "Crispy spiced potato hash with onion and spinach, topped with eggs steamed right in the pan. Breakfast-for-dinner. Scaled from 1 to 5 servings; cook in 2 large skillets or batches.",
+  "servings": "5",
+  "prepTime": "10 min",
+  "cookTime": "20 min",
+  "totalTime": "30 min",
+  "image": null,
+  "source": "https://pocketathlete.com/recipes/potato-hash-eggs/",
+  "sourceName": "PocketAthlete",
+  "sourcePost": null,
+  "addedBy": "Dad",
+  "added": "2026-10-30T03:23:17.000Z",
+  "tags": [
+   "Dinner",
+   "High Protein",
+   "Eggs"
+  ],
+  "macros": {
+   "calories": 623,
+   "protein_g": 29,
+   "carbs_g": 61,
+   "fat_g": 29,
+   "source": "recipe"
+  },
+  "ingredients": [
+   "1.5 kg white potatoes (about 3 1/4 lb), diced 1 cm",
+   "15 eggs",
+   "400 g baby spinach (about 14 oz)",
+   "60 g olive oil (about 1/4 cup + 1 tbsp)",
+   "300 g onions (about 2 medium), chopped",
+   "20 g ground spices: cumin, paprika and turmeric (about 2 1/2 tbsp total)"
+  ],
+  "steps": [
+   "Dice the potatoes at 1 cm. Bigger pieces won't cook through before the outsides burn.",
+   "Fry in the oil over medium heat for 12 minutes, turning every few minutes so they crust rather than steam (use 2 large skillets for this amount).",
+   "Add the onion and spices for the last 5 minutes, and the spinach for the last 1.",
+   "Push everything aside, crack the eggs into the space, and cover the pan 2 minutes until the eggs are set."
+  ]
+ },
+ {
+  "id": "tomato-spinach-shrimp-pasta",
+  "title": "Tomato Spinach Shrimp Pasta",
+  "description": "Garlicky shrimp tossed with pasta, cherry tomatoes and spinach in a light broth sauce. Scaled from 4 to 5 servings. Red pepper flakes are optional; leave them out so it's mild for the kids.",
+  "servings": "5",
+  "prepTime": "10 min",
+  "cookTime": "20 min",
+  "totalTime": "30 min",
+  "image": "images/tomato-spinach-shrimp-pasta.jpg",
+  "source": "https://succulentrecipes.com/tomato-spinach-shrimp-pasta/",
+  "sourceName": "Succulent Recipes",
+  "sourcePost": null,
+  "addedBy": "Dad",
+  "added": "2026-10-30T03:23:16.000Z",
+  "tags": [
+   "Dinner",
+   "High Protein",
+   "Shrimp"
+  ],
+  "macros": {
+   "calories": 400,
+   "protein_g": 30,
+   "carbs_g": 45,
+   "fat_g": 15,
+   "source": "recipe"
+  },
+  "ingredients": [
+   "10 oz spaghetti or your preferred pasta",
+   "1 1/4 lb large shrimp, peeled and deveined",
+   "2 1/2 tablespoons olive oil, divided",
+   "4 cloves garlic, minced",
+   "2 1/2 cups cherry tomatoes, halved",
+   "5 cups fresh spinach",
+   "1/2 teaspoon red pepper flakes (optional; skip for kids)",
+   "1/3 teaspoon salt",
+   "1/3 teaspoon black pepper",
+   "2/3 cup low-sodium chicken or vegetable broth (clean, no additives)",
+   "1/3 cup grated Parmesan cheese (optional, for serving)",
+   "Fresh basil leaves for garnish (optional)"
+  ],
+  "steps": [
+   "Bring a large pot of salted water to a boil and cook the pasta per the package, usually 8-10 minutes. Drain, reserving about 1/2 cup pasta water.",
+   "In a large skillet, heat half the olive oil over medium heat. Add the shrimp, season with salt and pepper, and cook 2-3 minutes per side until pink and opaque. Remove and set aside.",
+   "Add the remaining oil to the skillet and sauté the garlic (and red pepper flakes, if using) 1 minute. Add the tomatoes and cook 3-4 minutes until they soften.",
+   "Add the spinach and let it wilt. Pour in the broth, scrape up any bits, and simmer 2 minutes.",
+   "Add the pasta and toss to coat, adding a little pasta water if needed.",
+   "Return the shrimp and toss until heated through.",
+   "Serve topped with Parmesan and basil, if desired."
+  ]
+ },
+ {
+  "id": "ground-turkey-sweet-potato-skillet",
+  "title": "Ground Turkey Sweet Potato Skillet",
+  "description": "Taco-spiced turkey and sweet potato skillet topped with melted cheddar; serve over romaine as taco bowls. Uses the page's homemade taco seasoning instead of a packet. Makes 5 servings as written.",
+  "servings": "5",
+  "prepTime": "10 min",
+  "cookTime": "30 min",
+  "totalTime": "40 min",
+  "image": "images/ground-turkey-sweet-potato-skillet.jpg",
+  "source": "https://nourishedbynic.com/ground-turkey-sweet-potato-skillet/",
+  "sourceName": "Nourished by Nic",
+  "sourcePost": null,
+  "addedBy": "Dad",
+  "added": "2026-10-30T03:23:15.000Z",
+  "tags": [
+   "Dinner",
+   "High Protein",
+   "Turkey"
+  ],
+  "macros": {
+   "calories": 332,
+   "protein_g": 31,
+   "carbs_g": 17,
+   "fat_g": 16,
+   "source": "recipe"
+  },
+  "ingredients": [
+   "1 tbsp olive oil, divided",
+   "1 lb lean ground turkey",
+   "1 yellow onion, diced",
+   "1 large sweet potato, diced small",
+   "Salt and black pepper to taste",
+   "Homemade taco seasoning: 1 tbsp chili powder, 1 1/2 tsp ground cumin, 1 tsp salt, 1 tsp black pepper, 1/2 tsp paprika, 1/4 tsp garlic powder, 1/4 tsp onion powder, 1/4 tsp dried oregano, 1/4 tsp red pepper flakes (optional; skip for kids)",
+   "1 1/2 cups shredded cheddar cheese",
+   "Romaine lettuce, finely chopped, for serving",
+   "Optional toppings: Greek yogurt, salsa, guacamole or mashed avocado"
+  ],
+  "steps": [
+   "In a large skillet over medium-high heat, add 1/2 tbsp olive oil. Add the turkey and cook, stirring often, until no longer pink.",
+   "Move the turkey to a plate. Heat the remaining 1/2 tbsp oil in the same skillet, add the onion and sweet potato, and season with salt and pepper. Cover and cook over low-medium heat until the sweet potatoes are soft, 10-15 minutes, stirring now and then.",
+   "Return the turkey to the skillet with the homemade taco seasoning. Stir well, adding about 2 tbsp water so the seasoning coats everything.",
+   "Top with cheese and cover until melted, or broil about 5 minutes until bubbly. Serve over romaine with Greek yogurt, salsa and guacamole if you like."
+  ]
+ },
+ {
+  "id": "ground-beef-sweet-potato-skillet",
+  "title": "Spicy Ground Beef and Sweet Potato Skillet",
+  "description": "One-skillet lean beef with sweet potatoes, tomatoes and corn. Scaled from 4 to 5 servings. The cayenne is optional; leave it out so it's mild for the kids.",
+  "servings": "5",
+  "prepTime": "15 min",
+  "cookTime": "30 min",
+  "totalTime": "45 min",
+  "image": "images/ground-beef-sweet-potato-skillet.jpg",
+  "source": "https://www.spoonsimple.com/recipes/spicy-ground-beef-and-sweet-potato-skillet",
+  "sourceName": "Spoon Simple",
+  "sourcePost": null,
+  "addedBy": "Dad",
+  "added": "2026-10-30T03:23:14.000Z",
+  "tags": [
+   "Dinner",
+   "High Protein",
+   "Beef"
+  ],
+  "macros": {
+   "calories": 490,
+   "protein_g": 32,
+   "carbs_g": 40,
+   "fat_g": 22,
+   "source": "recipe"
+  },
+  "ingredients": [
+   "1 1/4 tbsp olive oil",
+   "1 1/4 lb lean ground beef",
+   "1 large onion, chopped",
+   "3 cloves garlic, minced",
+   "1 1/4 tsp chili powder",
+   "1/2 tsp cumin (generous)",
+   "1/4 tsp cayenne pepper (optional; skip for kids)",
+   "1/3 tsp smoked paprika",
+   "2 cups sweet potato (scant), peeled and diced into 1/2-inch cubes",
+   "About 19 oz diced tomatoes with juice (one 15-oz can plus 1/2 cup)",
+   "2/3 cup low-sodium beef broth (clean, no additives)",
+   "2/3 cup frozen corn",
+   "Salt and black pepper to taste",
+   "Optional toppings: chopped cilantro, avocado, lime wedges"
+  ],
+  "steps": [
+   "Heat the olive oil in a large skillet or Dutch oven over medium-high heat. Add the beef and cook, breaking it up, until browned. Drain excess grease. Add the onion and cook until softened, about 5 minutes. Stir in the garlic, chili powder, cumin, cayenne (if using) and smoked paprika; cook 1 minute.",
+   "Add the sweet potato, diced tomatoes with their juice, and broth. Stir well and season with salt and pepper.",
+   "Bring to a simmer, then reduce heat to medium-low, cover and cook 15-20 minutes, until the sweet potatoes are fork-tender. Stir occasionally.",
+   "Stir in the corn and cook 2-3 minutes until heated through.",
+   "Adjust seasoning and serve hot with optional cilantro, avocado and lime."
+  ]
+ },
+ {
+  "id": "sheet-pan-honey-soy-salmon-sweet-potatoes",
+  "title": "Sheet Pan Honey-Soy Salmon, Sweet Potatoes, and Green Beans",
+  "description": "Honey-soy-lime glazed salmon roasted with sweet potatoes and garlicky green beans. Scaled from 4 to 5 servings; use two pans if crowded.",
+  "servings": "5",
+  "prepTime": "15 min",
+  "cookTime": "45 min",
+  "totalTime": "60 min",
+  "image": "images/sheet-pan-honey-soy-salmon-sweet-potatoes.jpg",
+  "source": "https://emeals.com/recipes/recipe-47024-305661-Sheet-Pan-HoneySoy-Salmon-Sweet-Potatoes-and-Green-Beans",
+  "sourceName": "eMeals",
+  "sourcePost": null,
+  "addedBy": "Dad",
+  "added": "2026-10-30T03:23:13.000Z",
+  "tags": [
+   "Dinner",
+   "High Protein",
+   "Salmon"
+  ],
+  "macros": {
+   "calories": 444,
+   "protein_g": 35,
+   "carbs_g": 28,
+   "fat_g": 21,
+   "source": "recipe"
+  },
+  "ingredients": [
+   "Cooking spray (or a little avocado oil)",
+   "2 Tbsp lower-sodium soy sauce or tamari (scant)",
+   "3 3/4 Tbsp olive oil, divided",
+   "1 1/4 Tbsp honey",
+   "1 1/4 Tbsp fresh lime juice",
+   "3 garlic cloves, minced, divided",
+   "5 (5-ounce) skin-on salmon fillets",
+   "1 1/4 lb sweet potatoes, cut into 3/4-inch cubes",
+   "5/8 tsp kosher salt, divided",
+   "5/8 tsp black pepper, divided",
+   "15 oz trimmed fresh green beans"
+  ],
+  "steps": [
+   "Preheat the oven to 400°F. Line an 18 x 13-inch rimmed baking sheet (or two) with foil; coat with cooking spray.",
+   "Whisk the soy sauce, 1 1/4 Tbsp of the oil, the honey, lime juice and half the garlic in a large bowl. Add the salmon and toss to coat.",
+   "Put the sweet potatoes on the pan. Drizzle with 1 1/4 Tbsp oil and sprinkle with half the salt and pepper; toss. Roast until almost fork-tender, 20-25 minutes.",
+   "A few minutes before the potatoes are done, toss the green beans with the remaining oil and garlic, and the rest of the salt and pepper.",
+   "Stir the potatoes and push them to one end of the pan. Place the salmon in the center and spread the green beans over the open space. Roast 15 minutes."
+  ]
+ },
+ {
+  "id": "sheet-pan-salmon-potatoes-green-beans",
+  "title": "Sheet Pan Baked Salmon with Roasted Potatoes and Green Beans",
+  "description": "Salmon brushed with a lemon-Dijon herb sauce, roasted on one pan with potatoes and green beans. Scaled from 4 to 5 servings.",
+  "servings": "5",
+  "prepTime": "10 min",
+  "cookTime": "25 min",
+  "totalTime": "35 min",
+  "image": "images/sheet-pan-salmon-potatoes-green-beans.jpg",
+  "source": "https://www.mynetdiary.com/salmon-sheet-pan-dinner.html",
+  "sourceName": "MyNetDiary",
+  "sourcePost": null,
+  "addedBy": "Dad",
+  "added": "2026-10-30T03:23:12.000Z",
+  "tags": [
+   "Dinner",
+   "High Protein",
+   "Salmon"
+  ],
+  "macros": {
+   "calories": 393,
+   "protein_g": 35,
+   "carbs_g": 27,
+   "fat_g": 16,
+   "source": "recipe"
+  },
+  "ingredients": [
+   "20 oz potatoes with skin (new or baby potatoes work best)",
+   "2 1/2 tablespoons olive oil",
+   "1/3 teaspoon salt",
+   "1/3 teaspoon black pepper",
+   "3 3/4 tablespoons lemon juice (use less for a milder sauce)",
+   "2 1/2 tablespoons Dijon mustard",
+   "1 1/4 tablespoons dried parsley",
+   "2 teaspoons dried dill",
+   "25 oz wild coho salmon, cut into five 5-oz portions",
+   "15 oz green beans"
+  ],
+  "steps": [
+   "Preheat the oven to 425°F.",
+   "Dice the potatoes (peel if you like). Toss with olive oil, salt and pepper.",
+   "Spread on a large baking sheet and bake 10 minutes.",
+   "Meanwhile, combine lemon juice, Dijon, parsley and dill in a small bowl. For a milder sauce, use only 2-3 teaspoons lemon juice.",
+   "Remove the pan and move the potatoes to one side.",
+   "Place the salmon fillets skin side down on the other side and brush with the lemon mixture. Add the green beans around the salmon.",
+   "Return to the oven for 10-15 minutes, until the salmon flakes with a fork.",
+   "Garnish with extra chopped dill and parsley, if desired."
+  ]
+ },
+ {
+  "id": "instant-pot-cheesy-chicken-broccoli-rice",
+  "title": "5-Ingredient Instant Pot Cheesy Chicken, Broccoli and Rice",
+  "description": "Cheesy, homemade take on the boxed classic, made in a 6-quart Instant Pot. Scaled from 4 to 5 servings (keep the broth-to-rice ratio; same cook time).",
+  "servings": "5",
+  "prepTime": "10 min",
+  "cookTime": "25 min",
+  "totalTime": "35 min",
+  "image": "images/instant-pot-cheesy-chicken-broccoli-rice.jpg",
+  "source": "https://www.pillsbury.com/recipes/5-ingredient-instant-pot-cheesy-chicken-broccoli-and-rice/0cfe85f8-3f6d-4aab-9432-277066dc4509",
+  "sourceName": "Pillsbury",
+  "sourcePost": null,
+  "addedBy": "Dad",
+  "added": "2026-10-30T03:23:11.000Z",
+  "tags": [
+   "Dinner",
+   "High Protein",
+   "Chicken"
+  ],
+  "macros": {
+   "calories": 500,
+   "protein_g": 42,
+   "carbs_g": 46,
+   "fat_g": 17,
+   "source": "recipe"
+  },
+  "ingredients": [
+   "1 3/4 cups + 2 tbsp low-sodium chicken broth (any clean broth instead of the brand named)",
+   "1 1/4 cups uncooked long-grain white rice",
+   "1/2 teaspoon salt (generous)",
+   "1/3 teaspoon pepper",
+   "25 oz boneless skinless chicken thighs, cut in 1-inch pieces",
+   "12 1/2 oz fresh broccoli florets (about 5 cups)",
+   "1 1/4 cups shredded sharp Cheddar cheese (5 oz)"
+  ],
+  "steps": [
+   "Spray a 6-quart Instant Pot insert with cooking spray (or wipe with oil). Mix broth, rice, salt and pepper in the insert.",
+   "Stir in chicken and broccoli. Secure lid; set pressure valve to SEALING. Select MANUAL; cook on high pressure 10 minutes. Select CANCEL. Set valve to VENTING to quick-release pressure.",
+   "Stir in cheese. Broccoli will break down when stirring."
+  ]
+ },
+ {
+  "id": "5-ingredient-chicken-broccoli-rice",
+  "title": "5 Ingredient Chicken and Broccoli with Rice",
+  "description": "One-pot weeknight dinner: browned chicken thighs, rice and broccoli simmered in broth and soy sauce. Scaled from 4 to 5 servings.",
+  "servings": "5",
+  "prepTime": "18 min",
+  "cookTime": "35 min",
+  "totalTime": "53 min",
+  "image": "images/5-ingredient-chicken-broccoli-rice.jpg",
+  "source": "https://chomprecipes.com/5-ingredient-chicken-and-broccoli-recipe-with-rice/",
+  "sourceName": "Chomp Recipes",
+  "sourcePost": null,
+  "addedBy": "Dad",
+  "added": "2026-10-30T03:23:10.000Z",
+  "tags": [
+   "Dinner",
+   "High Protein",
+   "Chicken"
+  ],
+  "macros": {
+   "calories": 480,
+   "protein_g": 32,
+   "carbs_g": 61,
+   "fat_g": 18,
+   "source": "recipe",
+   "_note": "Calories, protein and fat from the recipe page; carbs estimated (page doesn't list them)."
+  },
+  "ingredients": [
+   "1 7/8 lb boneless, skinless chicken thighs (about 30 oz), cut into bite-sized pieces",
+   "1 3/4 cups + 2 tbsp long-grain white rice, rinsed",
+   "3 3/4 cups broccoli florets",
+   "3 cups + 2 tbsp low-sodium chicken broth (clean, no additives)",
+   "1/4 cup soy sauce (or tamari / coconut aminos)"
+  ],
+  "steps": [
+   "Heat a large pot or deep skillet with a tight-fitting lid over medium-high heat. Add the chicken and cook undisturbed 4-5 minutes until golden, then stir and brown 3-4 minutes more. It doesn't need to be cooked through. Remove and set aside.",
+   "In the same pot, add the rinsed rice to the rendered fat and toast 1-2 minutes until slightly translucent and nutty. Stir in the soy sauce to coat the rice.",
+   "Return the chicken to the pot with the broccoli. Pour in the broth, stir, and bring to a boil. Reduce heat to low, cover and simmer 18-20 minutes until the rice absorbs most of the liquid.",
+   "Remove from heat and rest covered 5 minutes. Fluff with a fork; the chicken should reach 165°F. Serve hot."
+  ]
+ },
+ {
+  "id": "sheet-pan-lemon-herb-chicken-potatoes-green-beans",
+  "title": "Lemon Herb Chicken, Potatoes & Green Beans",
+  "description": "One-pan lemon-herb chicken thighs roasted with baby potatoes and green beans. Scaled from 4 to 5 servings.",
+  "servings": "5",
+  "prepTime": "15 min",
+  "cookTime": "45 min",
+  "totalTime": "60 min",
+  "image": "images/sheet-pan-lemon-herb-chicken-potatoes-green-beans.jpg",
+  "source": "https://ginasantangelo.com/recipe-sheet-pan-lemon-herb-chicken",
+  "sourceName": "Gina Santangelo",
+  "sourcePost": null,
+  "addedBy": "Dad",
+  "added": "2026-10-30T03:23:09.000Z",
+  "tags": [
+   "Dinner",
+   "High Protein",
+   "Chicken"
+  ],
+  "macros": {
+   "calories": 516,
+   "protein_g": 38,
+   "carbs_g": 28,
+   "fat_g": 33,
+   "source": "estimated",
+   "_note": "Page states only ~38g protein (its own estimate); calories, carbs and fat estimated from ingredients with USDA values."
+  },
+  "ingredients": [
+   "5 bone-in, skin-on chicken thighs (about 2 1/4 lb)",
+   "1 1/4 lb baby potatoes, halved",
+   "15 oz green beans, trimmed",
+   "1/4 cup olive oil",
+   "1 large lemon (zested and juiced) plus extra wedges for serving",
+   "4 garlic cloves, minced",
+   "1 1/4 tbsp fresh rosemary, chopped",
+   "1 1/4 tbsp fresh thyme leaves",
+   "1 1/4 tsp salt",
+   "1/2 tsp black pepper (generous)"
+  ],
+  "steps": [
+   "Heat the oven to 425°F and line a large sheet pan with parchment (use two pans if crowded).",
+   "Whisk the olive oil, lemon zest and juice, garlic, rosemary, thyme, salt and pepper.",
+   "Toss the potatoes with a third of the oil mixture, spread cut-side down on one half of the pan, and roast 15 minutes.",
+   "Coat the chicken in half of what remains, add skin-side up, and roast 20 minutes.",
+   "Toss the green beans in the last of the oil mixture, tuck around the chicken, and roast 12-15 minutes until the chicken reaches 165°F.",
+   "Squeeze lemon over, rest 5 minutes, and serve."
+  ]
+ },
+ {
   "id": "high-protein-hamburger-helper",
   "title": "High Protein Hamburger Helper",
   "description": "One-pot weeknight dinner with extra veggies blended into the sauce with cottage cheese for a protein boost.",
