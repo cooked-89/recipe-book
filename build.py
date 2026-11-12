@@ -93,11 +93,22 @@ for r in R:
                    [('Serves', 'servings'), ('Prep', 'prepTime'), ('Cook', 'cookTime'), ('Total', 'totalTime')] if r.get(f))
     ing = ''.join(f'<li data-t="{e(i)}">{e(i)}</li>' for i in r['ingredients'])
     st = ''.join(f'<li>{e(s)}</li>' for s in r['steps'])
+    src = r.get("source") or ""
+    sname = r.get("sourceName") or src
+    if isinstance(src, str) and src.startswith(("http://", "https://")):
+        src_html = f'Source: <a href="{e(src)}" target="_blank" rel="noopener">{e(sname)}</a>'
+    elif sname or src:
+        src_html = f'Source: {e(sname or src)}'
+    else:
+        src_html = ""
+    if src_html and r.get("sourcePost"):
+        src_html += f' &middot; <a href="{e(r["sourcePost"])}" target="_blank" rel="noopener">Original post</a>'
+    src_p = f'<p class="src">{src_html}</p>' if src_html else ""
     pages += f'''<section class="recipe" id="{e(r["id"])}"><a class="back" href="#">All recipes</a>
 <div class="imgwrap">{img(r,"hero")}<span class="badge" data-rid="{e(r["id"])}" hidden></span></div><div class="rbody"><h2>{e(r["title"])}</h2><p class="desc">{e(r.get("description",""))}</p>
 <div class="meta">{meta}</div>{macros_html(r)}{scaler_html(r)}<div class="rtags" data-rid="{e(r["id"])}"><div class="chips">{chips(r)}</div></div><button type="button" class="cartadd" data-rid="{e(r["id"])}">{ic("cart")}Add to Cart</button><div class="ratings" data-rid="{e(r["id"])}"><h4>Family ratings</h4>{RATE_ROWS}<p class="rmsg"></p></div><div class="cols"><div><h4>Ingredients</h4><ul class="ingl" data-rid="{e(r["id"])}">{ing}</ul></div>
 <div><h4>Steps</h4><ol>{st}</ol></div></div>
-<p class="src">Source: <a href="{e(r["source"])}" target="_blank" rel="noopener">{e(r.get("sourceName", r["source"]))}</a>{(' &middot; <a href="' + e(r["sourcePost"]) + '" target="_blank" rel="noopener">Original post</a>') if r.get("sourcePost") else ''}</p></div></section>'''
+{src_p}</div></section>'''
 SCALE_JS = "<script>" + open("scale.js").read() + """
 (function(){window.rbK={};
 function apply(rid,k,fromInput){window.rbK[rid]=k;var sec=document.getElementById(rid);if(!sec)return;

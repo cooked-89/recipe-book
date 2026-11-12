@@ -1,5 +1,56 @@
 [
  {
+  "id": "homemade-beef-tacos",
+  "title": "Homemade Beef Tacos",
+  "description": "The family's homemade beef tacos with from-scratch taco seasoning, topped with cheddar, sour cream, and tomatoes. Makes 10 tacos.",
+  "servings": "5 (10 tacos, 2 per person)",
+  "prepTime": "10 min",
+  "cookTime": "15 min",
+  "totalTime": "25 min",
+  "image": null,
+  "source": "Cook family recipe",
+  "sourceName": "Cook family recipe",
+  "sourcePost": null,
+  "addedBy": "Dad",
+  "added": "2026-11-12T13:01:37.601Z",
+  "tags": [
+   "Dinner",
+   "Tacos",
+   "Ground Beef",
+   "Kid-Friendly",
+   "Quick"
+  ],
+  "macros": {
+   "calories": 645,
+   "protein_g": 35,
+   "carbs_g": 38,
+   "fat_g": 39,
+   "source": "estimated",
+   "_note": "Per serving (2 tacos with toppings). Estimated from ingredients: Thomas Farms organic 85/15 beef label (4 oz raw = 240 cal, 21g protein, 17g fat), H-E-B Bakery flour tortillas (120 cal, 3g protein, 17g carbs, 4.5g fat each), about 1 cup H-E-B Natural mild cheddar thick shreds, 1/2 cup Daisy sour cream, 1 cup grape tomatoes, and the taco seasoning."
+  },
+  "ingredients": [
+   "1 1/3 lb ground beef (Thomas Farms organic 85/15)",
+   "10 H-E-B Bakery flour tortillas",
+   "1/4 tsp garlic powder",
+   "1/4 tsp onion powder",
+   "1/4 tsp oregano",
+   "pinch red pepper flakes, to taste",
+   "1/2 tsp paprika",
+   "1 Tbsp chili powder",
+   "1 1/2 tsp cumin",
+   "1 cup shredded mild cheddar (H-E-B Natural mild cheddar thick shreds)",
+   "1/2 cup sour cream (Daisy)",
+   "1 cup grape tomatoes, chopped"
+  ],
+  "steps": [
+   "Mix the taco seasoning (garlic powder, onion powder, oregano, red pepper flakes, paprika, chili powder, and cumin).",
+   "Brown the ground beef in a skillet over medium-high heat; drain if needed.",
+   "Stir in the seasoning with a splash of water (about 1/4 to 1/3 cup) and simmer until thickened.",
+   "Warm the tortillas.",
+   "Fill with beef and top with cheddar, sour cream, and tomatoes."
+  ]
+ },
+ {
   "id": "turkey-spinach-scramble-sweet-potato-hash",
   "title": "Turkey Spinach Scramble with Sweet Potato Hash",
   "description": "Golden sweet potato and onion hash with ground turkey, spinach and scrambled egg in one skillet. Scaled from 1 to 5 servings; use your largest skillet or two.",
