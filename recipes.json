@@ -1,5 +1,50 @@
 [
  {
+  "id": "cook-family-spaghetti",
+  "title": "Cook Family Spaghetti",
+  "description": "The family's spaghetti with browned ground beef, sliced mushrooms, and Rao's marinara, tossed with Rummo organic shells (or the same brand's spaghetti) and topped with Sartori Parmesan. Feeds 5 to 6.",
+  "servings": "5 to 6",
+  "prepTime": "10 min",
+  "cookTime": "25 min",
+  "totalTime": "35 min",
+  "image": null,
+  "source": "Cook family recipe",
+  "sourceName": "Cook family recipe",
+  "sourcePost": null,
+  "addedBy": "Dad",
+  "added": "2026-11-15T20:18:55.000Z",
+  "tags": [
+   "Dinner",
+   "Pasta",
+   "Ground Beef",
+   "Kid-Friendly",
+   "Family Favorite"
+  ],
+  "macros": {
+   "calories": 628,
+   "protein_g": 39,
+   "carbs_g": 70,
+   "fat_g": 24,
+   "source": "estimated",
+   "_note": "Per serving when split about 5 1/2 ways (a little higher if split 5 ways, a little lower if split 6). Estimated from the Rummo organic shells label (2 oz dry = 190 cal, 8g protein, 42g carbs, 1g fat), one 31.7 oz jar of Rao's Marinara (1/2 cup = 100 cal, 2g protein, 6g carbs, 7g fat), the Thomas Farms organic 85/15 label after draining the browned beef (pouring off fat typically removes about a third of the raw fat; protein unchanged; 4 oz raw = 240 cal, 21g protein, 17g fat), 8 oz white mushrooms, and about 1/2 cup Sartori grated Parmesan for serving."
+  },
+  "ingredients": [
+   "1 lb Rummo Organic Shells No. 42 (or Rummo spaghetti)",
+   "1 jar (31.7 oz) Rao's Homemade Marinara",
+   "1 1/3 lb ground beef (Thomas Farms organic 85/15)",
+   "8 oz whole white or baby bella mushrooms, sliced",
+   "Sartori grated Parmesan, for serving (about 1/2 cup)",
+   "salt, for the pasta water"
+  ],
+  "steps": [
+   "Bring a large pot of salted water to a boil. Cook the shells (or spaghetti) until al dente according to the package, then drain.",
+   "Meanwhile, brown the ground beef in a large skillet over medium-high heat, then drain the grease.",
+   "Add the sliced mushrooms to the same skillet and cook until tender.",
+   "Stir in the marinara and simmer a few minutes.",
+   "Toss the sauce with the pasta and top with Sartori grated Parmesan."
+  ]
+ },
+ {
   "id": "homemade-beef-tacos",
   "title": "Homemade Beef Tacos",
   "description": "The family's homemade beef tacos with from-scratch taco seasoning, topped with cheddar, sour cream, and tomatoes, and a side of roasted broccoli. Makes 10 tacos.",
